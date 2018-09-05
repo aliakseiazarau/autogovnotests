@@ -99,8 +99,8 @@ public class LoginPageTest {
         registrationPage().submitRecoverySend.click();
         wait.until(ExpectedConditions.visibilityOf(registrationPage().passRecoverSent));
         Assert.assertTrue(registrationPage().passRecoverSent.getText().contains(Text.passReset));
-        final String POP_USER = "aliakseiazarautest@gmail.com";
-        final String POP_PASSWORD = "PerfectIdleness@12380";
+        final String POP_USER = Text.validLogin;
+        final String POP_PASSWORD = Text.validMailPass;
         System.out.println(GetMailText.resetpswd);
         while (GetMailText.resetpswd == null) {
             GetMailText.getMails(POP_USER,POP_PASSWORD);

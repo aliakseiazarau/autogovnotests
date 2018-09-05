@@ -1,5 +1,7 @@
 package registrationPage;
 
+import PageFactoryFiles.Text;
+
 import javax.mail.*;
 import javax.mail.internet.MimeMultipart;
 import java.io.IOException;
@@ -11,8 +13,8 @@ public class GetMailText {
 
     private static final String MAIL_POP_HOST = "pop.gmail.com";
     private static final String MAIL_STORE_TYPE = "pop3";
-    private static final String POP_USER = "aliakseiazarautest@gmail.com";
-    private static final String POP_PASSWORD = "PerfectIdleness@12380";
+    private static final String POP_USER = Text.validLogin;
+    private static final String POP_PASSWORD = Text.validMailPass;
     private static final String POP_PORT = "995";
     private static final String regex = ("(?:http[^\\s]+)");
 

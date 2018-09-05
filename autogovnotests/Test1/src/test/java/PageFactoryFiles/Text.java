@@ -116,6 +116,8 @@ public class Text {
 
     public static String invalidPass = "12345";
 
+    public static String validMailPass = "PerfectIdleness@12380";
+
     public static String validLogin = "aliakseiazarautest@gmail.com";
 
     public static String invalidLogin = "aliakseiazarau546345345346312@gmail.com";
